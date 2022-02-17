@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #eaedf2;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+h5{
+    color: #0000008f;
+}
+
+.frem{
+    width: 23rem;
+    height: 18rem;
+    background: white;
+    border-radius: 31px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.frem .search-area{
+    position: absolute;
+    top: -27px;
+    width: 21rem;
+    height: 3rem;
+    background: white;
+    border-radius: 23px;
+    box-shadow: 0px 13px 20px #00000012;
+}
+.frem .search-area input{
+    width: 100%;
+    height: 100%;
+    border-radius: 23px;
+    border: none;
+    outline: none;
+    padding: 0px 36px 0px 15px;
+    font-size: 20px;
+    color: #00000085;
+    font-family: cursive;
+}
+.frem .search-area img{
+    width: 28px;
+    position: absolute;
+    right: 14px;
+    top: 12px;
+}
+.frem #no-searchimg{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.frem #no-searchimg img{
+    width: 16rem;
+}
+.frem .search-re{
+    width: 100%;
+    height: 286px;
+    overflow: auto;
+    padding: 3px 12px 3px 12px;
+    margin-top: 29px;
+    border-radius: 31px;
+    flex-wrap: wrap;
+}
+.frem .search-re .yt-channel{
+    width: 100%;
+    height: 4rem;
+    background: #ededed;
+    border-radius: 14px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 12px;
+}
+.frem .search-re .yt-channel img{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.frem .search-re .yt-channel a{
+    background: linear-gradient(0deg, #fd3d3d, #eb0769);
+    padding: 12px;
+    border-radius: 11px;
+    text-decoration: none;
+    color: white;
+    font-size: 21px;
+}

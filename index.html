@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="frem">
+        <div class="search-area">
+            <input type="text" name="fdg" id="searchbar" onkeyup="search_animal()" placeholder="Search..." aria-controls="datatable">
+            <img src="./magnifying-glass.png" alt="">
+        </div>
+        <div id="no-searchimg">
+            <img src="./clipart1533013.png" alt="">
+        </div>
+        <div class="search-re animals">
+            <div class="yt-channel animals">
+                <img src="./logo.png" alt="">
+                <div class="yt-name-sub">
+                    <p>Cod Mark</p>
+                    <h5>7.02k subscribers</h5>
+                </div>
+                <a href="#">SUBSCRIBE</a>
+            </div>
+            <div class="yt-channel animals">
+                <img src="./online.jpg"
+                    alt="">
+                <div class="yt-name-sub">
+                    <p>Online Tutorials</p>
+                    <h5>663K subscribers</h5>
+                </div>
+                <a href="#">
+                    SUBSCRIBE
+                </a>
+            </div>
+            <div class="yt-channel animals">
+                <img src="./coding.jpg"
+                    alt="">
+                <div class="yt-name-sub">
+                    <p>Coding Artist</p>
+                    <h5>33.2K subscribers</h5>
+                </div>
+                <a href="#">
+                    SUBSCRIBE
+                </a>
+            </div>
+            <div class="yt-channel animals">
+                <img src="./codewithharry.jpg"
+                    alt="">
+                <div class="yt-name-sub">
+                    <p>CodeWithHarry</p>
+                    <h5>2.5M subscribers</h5>
+                </div>
+                <a href="#">
+                    SUBSCRIBE
+                </a>
+            </div>
+            <div class="yt-channel animals">
+                <img src="./thapa.jpg"
+                    alt="">
+                <div class="yt-name-sub">
+                    <p>Thapa Technical</p>
+                    <h5>409K subscribers</h5>
+                </div>
+                <a href="#">
+                    SUBSCRIBE
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+   function search_animal() {
+        let input = document.getElementById('searchbar').value
+        input = input.toLowerCase();
+        let x = document.getElementsByClassName('animals');
+
+        if (x => none) {
+            document.getElementById('no-searchimg').style.display = "flex";
+        } else {
+            document.getElementById('no-searchimg').style.display = "none";
+        }
+
+        for (i = 0; i < x.length; i++) {
+            if (!x[i].innerHTML.toLowerCase().includes(input)) {
+                x[i].style.display = "none";
+            }
+            else {
+                x[i].style.display = "flex";
+                document.getElementById('no-searchimg').style.display = "none";
+            }
+        }
+    }
+</script>
+</html>
